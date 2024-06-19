@@ -1,47 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Task 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Task1</title>
     <style>
-        table,tr,th,td {
-            background-color:aqua;
-            border : 1px solid black;
+        table#tab1 {
+            border: 1px solid black;
             border-radius: 10px;
-            text-align:center;
-            
+        }
+
+        #tab1 th, #tab1 td {
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: lightblue;
+        }
+
+        #tab2 td {
+            border: 2px solid rgb(175, 179, 61);
+        }
+
+        #c1 {
+            border-radius: 4px;
+        }
+        #c2 {
+            border-radius: 6px;
+        }
+        #c3 {
+            border-radius: 10px;
+        }
+        #c4 {
+            border-radius: 6px;
+        }
+        #c5 {
+            border-radius: 2px;
+        }
+        #c6 {
+            border-radius: 10px;
+        }
+        #c7 {
+            border-radius: 50%;
+        }
+        #c8 {
+            border-radius: 3px;
+        }
+        #c9 {
+            border-top-right-radius: 12px;
+            border-bottom-left-radius: 15px;
         }
     </style>
 </head>
 <body>
-    <table>
-        <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Age</th>
-        </tr>
+    <center>
+        <table id="tab1" cellpadding="1" cellspacing="2" bgcolor="lightblue">
+            <tbody><tr>
+                <th height="10" width="300">Firstname</th>
+                <th height="10" width="300">Lastname</th>
+                <th height="10" width="130">Age</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>80</td>
+            </tr>
+        </tbody></table>
         <br>
-        <br>
-        <tr>
-            <td>Jill</td>
-            <td>Smith</td>
-            <td>50</td>
-        </tr>
-        <br>
-        <br>
-        <tr>
-            <td>Eve</td>
-            <td>Jackson</td>
-            <td>94</td>
-        </tr>
-        <br>
-        <br>
-        <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>80</td>
-        </tr>
-    </table>
-</body>
-</html>
+        <table id="tab2" cellspacing="10">
+            <tbody><tr>
+                <td id="c1" height="30" width="50"></td>
+                <td id="c2" height="30" width="50"></td>
+                <td id="c3" height="30" width="50"></td>
+            </tr>
+            <tr>
+                <td id="c4" height="30" width="50"></td>
+                <td id="c5" height="30" width="50"></td>
+                <td id="c6" height="30" width="50"></td>
+            </tr>
+            <tr>
+                <td id="c7" height="30" width="50"></td>
+                <td id="c8" height="30" width="50"></td>
+                <td id="c9" height="30" width="50"></td>
+            </tr>
+        </tbody></table>
+    </center>
+
+</body></html>4
